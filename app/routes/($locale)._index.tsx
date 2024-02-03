@@ -58,7 +58,7 @@ function RecommendedProducts({
   products: Promise<RecommendedProductsQuery>;
 }) {
   return (
-    <div className="recommended-products" class="bg-sky-500/[.06]">
+    <div className="recommended-products bg-sky-500/[.06]">
       <h2>Recommended Products</h2>
       <Suspense fallback={<div>Loading...</div>}>
         <Await resolve={products}>
